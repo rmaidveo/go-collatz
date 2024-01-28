@@ -12,10 +12,13 @@ func main() {
 	n := *nFlag
 	fmt.Println(n)
 
-	if n%2 == 1 {
-		n = n*3 + 1
-	} else {
-		n /= 2
+	for n != 1 {
+		if n%2 == 1 {
+			n = n*3 + 1
+		} else {
+			n /= 2
+		}
+
+		fmt.Println(n)
 	}
-	fmt.Println(n)
 }
